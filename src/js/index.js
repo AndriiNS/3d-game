@@ -46,3 +46,11 @@ function setFullHeight() {
 
 window.addEventListener("resize", setFullHeight);
 setFullHeight();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const soundButton = document.querySelector(".sound");
+
+  soundButton.addEventListener("click", () => {
+    soundButton.classList.toggle("muted");
+  });
+});

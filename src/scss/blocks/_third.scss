@@ -115,6 +115,7 @@ section.active {
     font-size: 9.6rem;
     line-height: 8.8rem;
     text-shadow: 0px 4px 20px 0px #ffd53680;
+    -webkit-text-stroke-width: 0.1px;
   }
   .third__descr {
     max-width: 61.6rem;
@@ -129,5 +130,8 @@ section.active {
     position: absolute;
     bottom: 8rem;
     padding: 3.2rem 12.9rem;
+    &:hover {
+      font-size: 3.8rem;
+    }
   }
 }
