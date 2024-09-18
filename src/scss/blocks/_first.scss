@@ -1,3 +1,18 @@
+.first__btns {
+  height: var(--first-btns-height);
+}
+
+.first__img-right.mobile {
+  height: var(--first-img-right-height);
+}
+
+.third__img-left {
+  height: var(--third-img-left-height);
+}
+
+.third__btn {
+  height: var(--third-btn-height);
+}
 :root {
   --vh: 1vh;
 }
