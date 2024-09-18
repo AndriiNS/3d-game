@@ -114,8 +114,13 @@ section.active {
     margin-top: 4rem;
     font-size: 9.6rem;
     line-height: 8.8rem;
-    text-shadow: 0px 4px 20px 0px #ffd53680;
-    -webkit-text-stroke-width: 0.1px;
+    background: linear-gradient(130.09deg, #eb5d38 31.89%, #ffd600 92.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.5px;
   }
   .third__descr {
     max-width: 61.6rem;
