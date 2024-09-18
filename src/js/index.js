@@ -40,36 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function setFullHeight() {
-  document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
-
-  const firstBtns = document.querySelector(".first__btns");
-  if (firstBtns) {
-    firstBtns.style.setProperty("--first-btns-height", `${window.innerHeight * 0.1}px`);
-  }
-
-  const firstImgRightMobile = document.querySelector(".first__img-right.mobile");
-  if (firstImgRightMobile) {
-    firstImgRightMobile.style.setProperty("--first-img-right-height", `${window.innerHeight * 0.5}px`);
-  }
-
-  const thirdImgLeft = document.querySelector(".third__img-left");
-  if (thirdImgLeft) {
-    thirdImgLeft.style.setProperty("--third-img-left-height", `${window.innerHeight * 0.6}px`);
-  }
-
-  const thirdBtn = document.querySelector(".third__btn");
-  if (thirdBtn) {
-    thirdBtn.style.setProperty("--third-btn-height", `${window.innerHeight * 0.08}px`);
-  }
-}
-
-window.addEventListener("load", setFullHeight);
-window.addEventListener("resize", setFullHeight);
-
-window.addEventListener("resize", setFullHeight);
-setFullHeight();
-
 document.addEventListener("DOMContentLoaded", () => {
   const soundButton = document.querySelector(".sound");
 
