@@ -1,10 +1,13 @@
-// body {
-//   background-image: url("./../../img/first_screen.png");
-//   width: 100%;
-//   height: 100vh;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
+:root {
+  --vh: 1vh;
+}
+
+.full-height {
+  height: calc(var(--vh, 1vh) * 100);
+}
+body {
+  padding-bottom: 56px; /* Висота нижнього меню */
+}
 .background {
   position: fixed;
   width: 100%;
@@ -141,15 +144,22 @@
     right: 2.2rem;
   }
 }
+.first__img-right.mobile {
+  display: none;
+}
 @media (max-width: 968px) {
+  .first__img-right.mobile {
+    display: block;
+  }
+  .first__img-right,
   .first__img-left {
     display: none;
   }
-  .first__img-right {
+  .first__img-right.mobile {
     width: 48.8rem;
-    height: 65.2rem;
+    height: 72.2rem;
     right: 0;
-    left: 0;
+    left: 11rem;
     bottom: 0;
     z-index: -1;
   }
@@ -173,6 +183,7 @@
     font-weight: 700;
     line-height: 5.76rem;
     max-width: 61.6rem;
+    text-shadow: 0px 4px 20px 0px #ffd53680;
   }
   .first__descr {
     font-size: 2.4rem;
