@@ -105,6 +105,9 @@ section.active {
   .third__img-right {
     display: none;
   }
+  .third__content {
+    gap: 0;
+  }
   .third__img-left {
     width: 55.8rem;
     height: 86rem;
@@ -124,6 +127,7 @@ section.active {
     color: transparent;
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 0.5px;
+    margin-bottom: 4rem;
   }
   .third__descr {
     max-width: 61.6rem;
