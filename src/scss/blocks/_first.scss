@@ -1,0 +1,207 @@
+// body {
+//   background-image: url("./../../img/first_screen.png");
+//   width: 100%;
+//   height: 100vh;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./../../img/first_screen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.first {
+  // .first__content
+  // background-image: url("./../../img/first_screen.png");
+  width: 100%;
+  height: 100vh;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+    gap: 2rem;
+  }
+
+  // .first__text
+
+  &__text {
+    font-family: "Nirmala-light";
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    padding: 1.6rem 3rem;
+    border: 1px solid #ffffff;
+    border-radius: 4rem;
+    background: #ffffff33;
+    color: #fff;
+  }
+
+  // .first__title
+
+  &__title {
+    font-size: 8.6rem;
+    font-weight: 700;
+    line-height: 10rem;
+    max-width: 115rem;
+    text-align: center;
+    background: linear-gradient(130.09deg, #eb5d38 31.89%, #ffd600 92.03%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0px 4px 20px #ffd53680;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  // .first__descr
+
+  &__descr {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    max-width: 115rem;
+    color: #fff2ce;
+    text-transform: uppercase;
+    text-shadow: 0px 0.4rem 0.4rem 0px #00000040;
+    margin-bottom: 6rem;
+  }
+
+  // .first__btns
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  // .first__btn-no
+
+  &__btn-no {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 2.6rem 6.8rem;
+    border: 2px solid #ffffff;
+    box-shadow: 0.4rem 0.4rem 2rem 0px #ffffff66;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    &:hover {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      background: #373737;
+      padding: 3rem 9.1rem;
+    }
+  }
+
+  // .first__btn-continue
+
+  &__btn-continue {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 2.6rem 6.8rem;
+    box-shadow: 0.4rem 0.4rem 2rem 0px #ffffff66;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    background: linear-gradient(103.39deg, #ffe53b -32.17%, #ff2525 114.07%);
+    &:hover {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      padding: 3rem 8.9rem;
+    }
+  }
+  &__img-left {
+    position: absolute;
+    width: 52.1rem;
+    height: 79.5rem;
+    bottom: 0;
+    left: 7rem;
+  }
+  &__img-right {
+    position: absolute;
+    width: 67.1rem;
+    height: 73.2rem;
+    bottom: 0;
+    right: 2.2rem;
+  }
+}
+@media (max-width: 968px) {
+  .first__img-left {
+    display: none;
+  }
+  .first__img-right {
+    width: 48.8rem;
+    height: 65.2rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .background {
+    background-image: url("./../../img/first_screen-mobile.png");
+  }
+  .first__content {
+    padding-top: 4rem;
+    text-align: center;
+    gap: 2rem;
+  }
+  .first__text {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    max-width: 51.6rem;
+    padding: 1rem;
+  }
+  .first__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.76rem;
+    max-width: 61.6rem;
+  }
+  .first__descr {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.88rem;
+    letter-spacing: 0.2em;
+    max-width: 61.6rem;
+  }
+  .first__btns {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 3rem;
+    max-width: 66rem;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 4rem;
+  }
+  .first__btn-continue,
+  .first__btn-no {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+  }
+  .first__btn-no {
+    width: 100%;
+    order: 1;
+  }
+  .first__btn-continue {
+    width: 100%;
+  }
+}
